@@ -114,6 +114,11 @@ SPD_LC_LOG="linear_combiner=trace" target/debug/linear-combiner > lc.log 2>&1 & 
 msg "linear-combiner pid=${pid}"
 pids="${pids} ${pid}"
 
+while ! target/debug/spd-tv update --id=pt < "${pt}"
+do
+	sleep 1
+done
+
 SPD_AT_LOG="attestation_transformer=trace" target/debug/attestation-transformer > at.log 2>&1 & pid=$!
 msg "attestation-transformer pid=${pid}"
 pids="${pids} ${pid}"
