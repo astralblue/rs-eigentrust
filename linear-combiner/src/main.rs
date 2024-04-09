@@ -68,6 +68,15 @@ impl LinearCombinerService {
 			"did:pkh:eip155:59144:0x8Ef9328D63203230a295FA9Bf9fCd8C5384349C2",
 			"did:pkh:eip155:59144:0x3959ae2c154C443fc744861b6140dA6C8c97a3e3",
 			"did:pkh:eip155:59144:0x690fcde0b69b8b66342ac390a82092845c6f7f1c",
+			"did:pkh:eip155:1:pretrusted_peer_id_1",
+			"did:pkh:eip155:1:pretrusted_peer_id_2",
+			"did:pkh:eip155:1:pretrusted_peer_id_3",
+			"did:pkh:eip155:1:pretrusted_peer_id_4",
+			"did:pkh:eip155:1:pretrusted_peer_id_5",
+			"did:pkh:eip155:1:pretrusted_peer_id_6",
+			"did:pkh:eip155:1:pretrusted_peer_id_7",
+			"did:pkh:eip155:1:pretrusted_peer_id_8",
+			"did:pkh:eip155:1:pretrusted_peer_id_9",
 		] {
 			get_index(&db, did, &mut offset)?;
 		}
